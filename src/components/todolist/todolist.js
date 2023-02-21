@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Button, Card, Form } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './todolist.css'
@@ -79,6 +80,9 @@ function Todo({ todo, index, markTodo, removeTodo }){
   
     return (
       <section className='app'>
+        <Link to='/'>
+          <button className='reroute-button'>Home</button>
+        </Link>
         <section className='container'>
           <h1 className='text-center mb-4'>Todo List</h1>
           <FormTodo addTodo={addTodo} />
