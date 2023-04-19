@@ -21,6 +21,10 @@
   text-transform: uppercase;
 }
 
+.todo span {
+  color: #F4FAFF;
+}
+
 .card {
   background: #8789C0;
   border: none;
