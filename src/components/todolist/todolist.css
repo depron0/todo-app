@@ -1,11 +1,58 @@
-.app {
-    padding: 2% 0;
-  }
+.todo-container {
+  padding: 2% 0;
+  margin: auto; 
+}
+
+.todo-container h2 {
+  font-size: 2.4rem;
+}
   
-  .todo {
-    align-items: center;
-    display: flex;
-    font-size: 18px;
-    justify-content: space-between;
-  }
-  
+.input {
+  font-size: 1.8rem;
+  margin: 1% auto;
+  background: #E4E5F1;
+}
+
+.todo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.card {
+  background: #8789C0;
+  border: none;
+}
+
+.card-body {
+  box-shadow:3px 3px 4px #08090A;
+  margin: 1%;
+}
+
+.mark-buttons {
+  width: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mark-buttons button {
+  width: 30px;
+}
+
+.todo-button {
+  background: #7CC6FE;
+  color: #08090A;
+  padding: 1%;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 3px #08090A;
+  border-radius: 10%;
+}
+
+.todo-button:hover {
+  background: #F4FAFF;
+  color: #08090A;
+}

@@ -2,4 +2,64 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8% 0;
+}
+
+.login-wrapper h1 {
+    font-size: 3.5rem;
+}
+
+form {
+    margin-top: 2%;
+    font-size: 1.8rem;
+    min-width: 40vw;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    font-size: 1.8rem;
+}
+
+form label p {
+    font-size: 2.4rem;
+    margin-bottom: -0.4%;
+}
+
+input {
+    background: #F4FAFF;
+    box-shadow: 3px 3px 4px #08090A;
+}
+
+.submit-button {
+    background: #7CC6FE;
+    padding: 2%;
+    font-size: 1.8rem;
+    box-shadow: 2px 2px 3px #08090A;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #F4FAFF;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .login-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    form label {
+        font-size: 1.4rem;
+    }
+
+    form label p {
+        font-size: 1.8rem;
+    }
+
+    .submit-button {
+        font-size: 1.4rem;
+    }
 }

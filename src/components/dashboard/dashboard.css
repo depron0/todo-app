@@ -1,14 +1,22 @@
-.reroute-button{
+.reroute-button {
     padding: 1%;
     margin-top: 2%;
     border-radius: 10%;
+    background: #7CC6FE;
+    font-size: 1.8rem;
+    box-shadow: 2px 2px 3px #08090A;
 }
 
-.dash-wrapper{
+.dash-wrapper {
     padding: 2% 0;
     text-align: center;
 }
 
-p{
+.dash-wrapper h2 {
+    font-size: 2.4rem;
+}
+
+.dash-wrapper p {
     padding: 1%;
+    font-size: 1.8rem;
 }

@@ -10,11 +10,11 @@ import './todolist.css'
 function Todo({ todo, index, markTodo, removeTodo }){
     return (
       <section className='todo'>
-        <span style={{ textDecoration: todo.isDone ? 'line-through' : '' }}>{todo.text}</span>
+        <span style={{ textDecoration: todo.isDone ? 'line-through #F4FAFF' : '' }}>{todo.text}</span>
   
-        <section>
-          <Button variant='outline-success' onClick={() => markTodo(index)}>✓</Button>
-          <Button variant='outline-danger' onClick={() => removeTodo(index)}>✕</Button>
+        <section className='mark-buttons'>
+          <Button variant='outline-light' onClick={() => markTodo(index)}>✓</Button>
+          <Button variant='outline-light' onClick={() => removeTodo(index)}>✕</Button>
         </section>
       </section>
     )
@@ -33,11 +33,10 @@ function Todo({ todo, index, markTodo, removeTodo }){
     return(
       <Form onSubmit={handleSubmit}>
         <Form.Group>
-          <Form.Label><span>Add Todo</span></Form.Label>
-          <Form.Control type='text' className='input' value={value} onChange={x => setValue(x.target.value)} placeholder="Add new todo"/>
+          <Form.Control type='text' className='input' value={value} onChange={x => setValue(x.target.value)} placeholder="New todo"/>
         </Form.Group>
   
-        <Button variant='primary mb-3' type='submit'>
+        <Button variant='primary mb-3' type='submit' className='todo-button'>
           Add
         </Button>
       </Form>
@@ -83,8 +82,8 @@ function Todo({ todo, index, markTodo, removeTodo }){
         <Link to='/'>
           <button className='reroute-button'>Home</button>
         </Link>
-        <section className='container'>
-          <h1 className='text-center mb-4'>Todo List</h1>
+        <section className='todo-container'>
+          <h2 className='text-center mb-4'>Todo List</h2>
           <FormTodo addTodo={addTodo} />
   
           <section>

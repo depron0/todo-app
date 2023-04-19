@@ -1,3 +1,14 @@
+* {
+  background: #8789C0;
+  color: #08090A;
+  font-size: 62.5%;
+}
+
 .wrapper {
-  padding: 12% 4%;
+  padding: 4%;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-size: 3.5rem;
 }
